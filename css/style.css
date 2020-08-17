@@ -1,4 +1,5 @@
 body{
+	background: #efefef;
 	margin: 0;
 }
 
@@ -6,6 +7,7 @@ a{
 	text-decoration: none;
 }
 
+/* 头部导航条 */
 .clearfix::after{
 	content: '';
 	display: block;
@@ -13,29 +15,48 @@ a{
 }
 
 .topNavBar{
-	padding: 20px 16px;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
 } 
 
-.topNavBar > nav > ul{
+.topNavBar-inner{
+	padding: 20px 16px;
+}
+
+.banner{
+	height: 515px;
+	background-image: url(../img/rs-cover.jpg);
+	background-position: center center;
+	background-size: cover;
+}
+
+.mask{
+	height: 515px;
+	background-color: rgba(0,0,0,0.8);
+}
+
+.topNavBar  nav > ul{
 	list-style: none;
 	margin: 0;
 	padding: 0;
 }
 
-.topNavBar > a{
+.topNavBar a{
 	float: left;
 }
 
-.topNavBar > nav{
+.topNavBar nav{
 	float: right;
 }
 
-.topNavBar > nav > ul > li{
+.topNavBar nav > ul > li{
 	float: left;
 	margin: 0 17px;
 }
 
-.topNavBar > nav > ul > li > a{
+.topNavBar nav > ul > li > a{
 	font-size: 12px;
 	color: #B7B7B7;
 	font-weight: bold;
@@ -46,7 +67,7 @@ a{
 	display: block;
 }
 
-.topNavBar > nav > ul > li > a:hover{
+.topNavBar nav > ul > li > a:hover{
 	border-bottom: 3px solid #e06567;
 }
 
@@ -64,4 +85,38 @@ a{
 
 .topNavBar .logo .card{
 	color: #B7B7B7;
+}
+
+/* 卡片部分 */
+.userCard{
+	max-width: 940px;
+	background: #ffff;
+	margin: 0 auto;
+}
+
+.userCard .welcome{
+	background-color: #e6686a; 
+	color: white;
+	padding: 4px 15px;
+	line-height: 22px;
+	display: inline-block;
+	position: relative;
+}
+
+.userCard .triangle{
+	border: 9px solid transparent;
+	border-left-color: #e6686a;
+	border-top-width: 0px;
+	width: 0;
+	display: block;
+	position: absolute;
+	top: 100%;
+	left: 4px;
+}
+
+.userCard .picture{
+	float: left;
+}
+.userCard .text{
+	float: left;
 }
