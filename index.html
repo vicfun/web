@@ -7,10 +7,11 @@
 	<script src="//at.alicdn.com/t/font_2010780_8ffg2i5e0i5.js"></script>
 	<style type="text/css">
 		.icon {
-		   width: 30px; height: 30px;
-		   vertical-align: -0.15em;
-		   fill: white;
-		   overflow: hidden;
+			width: 1em;
+			height: 1em;
+			fill: currentColor;
+			vertical-align: -0.15em;
+			overflow: hidden;
 		}
 	</style>
 </head>
@@ -84,10 +85,12 @@
 				</a>
 			</footer>
 		</div>
-		<a href="#" download>下载 pdf 简历</a>
+		<p class="downloadResume-wraper">
+			<a class="downloadResume" href="./resume.pdf" target="_blank" download>下载 pdf 简历</a>
+		</p>
 		<p class="selfIntroduction">
-			你在阳台抽烟，你抽一半，风抽一半。
-			你没跟风计较，可能风也有烦恼吧。
+			你在阳台抽烟，你抽一半，风抽一半。<br>
+			你没跟风计较，可能风也有烦恼吧。<br>
 			你事后越想越气，于是抽起风来。
 		</p>
 	</main>
@@ -95,31 +98,49 @@
 	<!-- 技能模块 -->
 	<section class="skills">
 		<h2>技能</h2>
-		<ol>
+		<ol class="clearfix">
 			<li>
 				<h3>HTML5 &amp CSS3</h3>
+				<div class="progressBar">
+					<div class="progress"></div>
+				</div>
 			</li>
 			<li>
 				<h3>JavaScript</h3>
+				<div class="progressBar">
+					<div class="progress" style="width: 20%"></div>
+				</div>
 			</li>
 			<li>
 				<h3>jQuery</h3>
+				<div class="progressBar">
+					<div class="progress" style="width: 66%"></div>
+				</div>
 			</li>
 			<li>
 				<h3>Vue.js</h3>
+				<div class="progressBar">
+					<div class="progress" style="width: 50%"></div>
+				</div>
 			</li>
 			<li>
 				<h3>React.js</h3>
+				<div class="progressBar">
+					<div class="progress" style="width: 40%"></div>
+				</div>
 			</li>
 			<li>
 				<h3>Node.js</h3>
+				<div class="progressBar">
+					<div class="progress" style="width: 70%"></div>
+				</div>
 			</li>
 		</ol>
 	</section>
 	<section class="portfolio">
 		<h2>作品集</h2>
 		<nav>
-			<ol>
+			<ol class="clearfix">
 				<li>所有</li>
 				<li>框架</li>
 				<li>原生JS &amp CSS</li>
