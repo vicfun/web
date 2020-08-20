@@ -314,5 +314,29 @@ section.portfolio nav .bar{
 section.portfolio nav .bar-inner{
 	height: 100%;
 	background: #e6686a;
-	width: 10%;
+	border-radius: 2px;
+	transition: all 0.3s;
+}
+
+section.portfolio nav .bar.state1 .bar-inner{
+	margin-left: 0;
+	width: 36px;
+}
+section.portfolio nav .bar.state2 .bar-inner{
+	margin-left: 65px;
+	width: 50px;
+}
+section.portfolio nav .bar.state3 .bar-inner{
+	margin-left: 140px;
+	width: 106px;
+}
+/* 作品图片 */
+section.portfolio .works{
+	position: relative;
+	margin-top: 28px;
+	height: 597px;
+}
+section.portfolio .works > .big,
+section.portfolio .works > .small{
+	position: absolute;
 }
